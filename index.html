@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Background Page</title>
+    <!-- Google Font: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            height: 100%;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        body {
+            /* Background image - replace with your own image URL when uploading */
+            background-image: url('/assets/Brown-Black-Goats\ Photo.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+        
+        .title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            color: #e47c0c;
+            text-shadow: 2px 2px 4px #693604;
+        }
+        
+        .strapline {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: #ffffff;
+            line-height: 1.5;
+            text-shadow: 2px 2px 4px #d87411;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+                max-width: 90%;
+            }
+            
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .strapline {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+                max-width: 95%;
+            }
+            
+            .title {
+                font-size: 3rem;
+            }
+            
+            .strapline {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Just Goat Friends</h1>
+        <p class="strapline">Your strapline text goes here. Make it funny sunshine!</p>
+    </div>
+</body>
+</html>
